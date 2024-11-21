@@ -59,7 +59,7 @@ public class Ejemplo102 {
         String cadenaMultiplicacion = "";
         String cadenaSuma = "";
         String cadenaResta = "";
-        String cadenaFinal = "";        
+        String cadenaFinal;        
         
         System.out.println("Ingrese el número de tabla a generar");
         tabla = entrada.nextInt();
@@ -72,17 +72,17 @@ public class Ejemplo102 {
             suma = tabla + contador;
             resta = tabla - contador;
             operacion = tabla * contador;
-            cadenaSuma = String.format("%s%d+%d=%d\n", 
+            cadenaSuma = String.format("%s%d + %d = %d\n", 
                     cadenaSuma, 
                     tabla, 
                     contador,
                     suma);
-            cadenaResta = String.format("%s%d-%d=%d\n", 
+            cadenaResta = String.format("%s%d - %d = %d\n", 
                     cadenaResta, 
                     tabla, 
                     contador,
                     resta);
-            cadenaMultiplicacion = String.format("%s%d*%d=%d\n", 
+            cadenaMultiplicacion = String.format("%s%d * %d = %d\n", 
                     cadenaMultiplicacion, 
                     tabla, 
                     contador,
