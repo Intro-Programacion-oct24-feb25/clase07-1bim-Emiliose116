@@ -30,8 +30,8 @@ public class Ejemplo06 {
         System.out.println("Ingrese las notas de los "
                 + "estudiantes de su materia");
         // true 
-        // while (bandera) {
-        while(bandera==true){
+        //while (bandera) {        //Las dos líneas de aquí son exactamente lo
+        while(bandera==true){      //mismo
             System.out.println("Ingrese calificación");
             calificacion = entrada.nextDouble();
 
