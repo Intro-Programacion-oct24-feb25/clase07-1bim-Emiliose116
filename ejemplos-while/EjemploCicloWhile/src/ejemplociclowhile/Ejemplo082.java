@@ -30,7 +30,7 @@ public class Ejemplo082 {
         boolean bandera = true;
 
         System.out.println("Ingrese las notas de los estudiantes de su materia");
-        while (bandera==true) {
+        while (bandera == true) {
             System.out.println("Ingrese calificación:");
             calificacion = entrada.nextDouble();
             suma_total = suma_total + calificacion;
@@ -42,10 +42,17 @@ public class Ejemplo082 {
             System.out.println("Ingrese si para salir");
             String temporal = entrada.nextLine();
             temporal = temporal.toLowerCase();
-            if (temporal.equals("si") || temporal.equals("yes") ||
+            /*if (temporal.equals("si") || temporal.equals("yes") ||
             temporal.equals("s") || temporal.equals("y") || 
             temporal.equals("ye")){
-                bandera = false;
+                bandera = false;*/
+            switch (temporal) {
+                case "si":
+                case "ss":
+                case "yes":
+                case "y":
+                    bandera = false;
+                    break;
             }
         }
         promedio_final = suma_total / contador;
